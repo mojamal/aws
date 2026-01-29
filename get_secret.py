@@ -4,7 +4,7 @@ import boto3
 from botocorFromceptions import ClientError
 import json
 
-def get_secret(secret_name):
+def get_secret(secret):
     region_name = "us-east-1"
 
     # Create a Secrets Manager client
@@ -16,7 +16,7 @@ def get_secret(secret_name):
 
     try:
         get_secret_value_response = client.get_secret_value(
-            SecretId=secret_name
+            SecretId=secret
         )
     except ClientError as e:
         # For a list of exceptions thrown, see
