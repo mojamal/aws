@@ -1,5 +1,5 @@
-# aws
-Scripts for Python tasks.
+# AWS
+Scripts for repeatetive tasks.
 Including
 # restart_ec2_instance.py 
 Reboots specified ec2 instance with health checks.
